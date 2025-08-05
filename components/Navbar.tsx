@@ -18,6 +18,7 @@ import getUserSession from '@/actions/auth/getUserSession';
 import logoutAction from '@/actions/auth/logout';
 import { useRouter } from 'next/navigation';
 import { IUserEntity } from 'oneentry/dist/users/usersInterfaces';
+import useCartStore from '@/stores/cartStore';
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -26,6 +27,7 @@ export default function Navbar() {
   const [isLoading, setIsLoading] = useState(true);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
+  const cartItems = useCartStore((state) => state.cart);
 
   useEffect(() => {
     async function fetchUser() {
@@ -163,6 +165,11 @@ export default function Navbar() {
                 variant='ghost'
               >
                 <ShoppingCart className='h-6 w-6 text-orange-600 dark:text-orange-400 group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors duration-300' />
+                {cartItems.length > 0 && (
+                  <span className='absolute -top-2 -right-2 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white bg-gradient-to-r from-red-500 to-orange-500 rounded-full shadow-lg animate-pulse min-w-[20px] h-5'>
+                    {cartItems.length}
+                  </span>
+                )}
               </Button>
             </Link>
 
@@ -310,6 +317,11 @@ export default function Navbar() {
                   Cart
                 </span>
               </div>
+              {cartItems.length > 0 && (
+                <span className='inline-flex items-center justify-center px-3 py-1 text-sm font-bold text-white bg-gradient-to-r from-red-500 to-orange-500 rounded-full min-w-[24px] h-6'>
+                  {cartItems.length}
+                </span>
+              )}
             </Link>
           </div>
 
