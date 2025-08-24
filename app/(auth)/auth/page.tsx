@@ -132,7 +132,7 @@ function AuthForm() {
           <div className='text-center mb-6 xs:mb-7 sm:mb-8 lg:mb-10'>
             <div className='inline-flex items-center px-3 xs:px-4 py-1.5 xs:py-2 rounded-full bg-orange-100 dark:bg-orange-900/30 border border-orange-200 dark:border-orange-800 mb-4 xs:mb-5 sm:mb-6'>
               <span className='text-xs xs:text-sm font-semibold text-orange-800 dark:text-orange-200'>
-                {isSignUp ? '🎉 Join SahandPizza Family' : '🍕 Welcome Back'}
+                {isSignUp ? '🎉 Join JaybiePizza Family' : '🍕 Welcome Back'}
               </span>
             </div>
 
@@ -143,8 +143,8 @@ function AuthForm() {
             </h2>
             <p className='text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-2xl mx-auto px-2'>
               {isSignUp
-                ? 'Join SahandPizza today and discover exclusive deals on authentic Italian cuisine delivered hot to your door!'
-                : 'Welcome back to SahandPizza! Log in to continue your delicious journey with us.'}
+                ? 'Join JaybiePizza today and discover exclusive deals on authentic Italian cuisine delivered hot to your door!'
+                : 'Welcome back to JaybiePizza! Log in to continue your delicious journey with us.'}
             </p>
           </div>
 
@@ -211,7 +211,7 @@ function AuthForm() {
                       </span>
                     </div>
                   ) : isSignUp ? (
-                    'Join SahandPizza Family! 🍕'
+                    'Join JaybiePizza Family! 🍕'
                   ) : (
                     'Welcome Back! 🎉'
                   )}
@@ -225,7 +225,7 @@ function AuthForm() {
             <p className='text-sm xs:text-base sm:text-lg text-gray-600 dark:text-gray-300 text-center'>
               {isSignUp
                 ? 'Already part of our pizza family?'
-                : 'New to SahandPizza?'}
+                : 'New to JaybiePizza?'}
             </p>
             <Button
               variant='link'

@@ -47,7 +47,7 @@ A modern, full-featured e-commerce pizza ordering application built with Next.js
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/sahandghavidel/next-pizza-shop.git
+   git clone https://github.com/Jaybieghavidel/next-pizza-shop.git
    cd next-pizza-shop
    ```
 
@@ -218,7 +218,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-**Built with ❤️ by [Sahand Ghavidel](https://github.com/sahandghavidel)**
+**Built with ❤️ by [Jaybie Ghavidel](https://github.com/Jaybieghavidel)**
 
 🌟 **Star this repo if you found it helpful!** 🌟
 
